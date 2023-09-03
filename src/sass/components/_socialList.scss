@@ -1,0 +1,31 @@
+.social {
+    display: flex;
+    gap: 10px;
+}
+
+.socialItem {
+    @extend %social-btn;
+    width: 24px;
+    height: 24px;
+    color: #000;
+    background-color: $social-btn-color;
+
+    transition: $transition-background-color;
+    transition: $transition-color;
+
+    &:hover,
+    &:focus {
+        background-color: $social-btn-hover-color;
+        color: $social-btn-color;
+    }
+}
+
+.socialLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialIcon {
+    fill: currentColor;
+}

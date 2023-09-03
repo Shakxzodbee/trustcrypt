@@ -1,0 +1,44 @@
+[
+    {
+       "id": "1",
+        "name": "Название продукта",
+        "description": "Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...",
+        "category": "1 кат",
+        "path": "prod1"
+    },
+     {
+       "id": "2",
+        "name": "Название продукта",
+        "description": "Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...",
+        "category": "2 кат",
+        "path": "prod2"
+    },
+     {
+       "id": "3",
+        "name": "Название продукта",
+        "description": "Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...",
+        "category": "1 кат",
+        "path": "prod3"
+    },
+     {
+       "id": "4",
+        "name": "Название продукта",
+        "description": "Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...",
+        "category": "2 кат",
+        "path": "prod4"
+    },
+     {
+       "id": "5",
+        "name": "Название продукта",
+        "description": "Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...",
+        "category": "1 кат",
+        "path": "prod5"
+    },
+     {
+       "id": "6",
+        "name": "Название продукта",
+        "description": "Lorem ipsum at vero eos et accusam et justo duo dolores et ea rebum...",
+        "category": "3 кат",
+        "path": "prod6"
+    }
+]

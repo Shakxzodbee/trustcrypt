@@ -1,0 +1,54 @@
+.auth {
+    width: 100%;
+    padding-top: 136px;
+    margin: 0 auto;
+}
+
+.auth .authForm {
+    width: 100%;
+
+    @media screen and (min-width: 768px){
+        width: 490px;
+    }
+}
+
+.auth .authFormButton {
+    @extend %action-button;
+    width: 100%;
+    background-color: $main-btn-color;
+}
+
+.auth .ant-btn-primary:not(:disabled):not(.ant-btn-disabled):hover{
+    background-color: $main-btn-hover-color;
+    color: $secondary-btn-active-text-color;
+}
+
+.authOptions{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+    }
+}
+
+.registerButton {
+    @extend %action-button;
+    font-size: $secondary-text-font-size;
+    transition: $transition-background-color;
+
+    &:hover {
+        background-color: $secondary-btn-hover-color;
+        color: $main-btn-text-color;
+    }
+}
+
+.authTxt {
+    color: $main-text-color;
+    font-size: $main-text-font-size;
+    margin-bottom: 30px;
+}

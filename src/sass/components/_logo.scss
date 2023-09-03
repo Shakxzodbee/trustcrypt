@@ -1,0 +1,38 @@
+.logo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    cursor: pointer;
+    color: $logo-color;
+
+    transition: $transition-color;
+
+    &:hover,
+    &:focus {
+        color: $logo-hover-color;
+    }
+}
+
+.logoIcon {
+    width: 40px;
+    height: 44px;
+    fill: currentColor;
+}
+
+.logoText {
+    display: block;
+    font-size: $secondary-title-font-size;
+    font-weight: bold;
+    color: $main-text-color;
+    
+    transition: $transition-color;
+
+    .logo:hover &,
+    .logo:focus & {
+        color: $logo-hover-color;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px){
+        display: none;
+    }
+}

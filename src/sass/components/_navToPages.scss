@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.navItem {
+    color: $secondary-text-color;
+    font-size: $main-text-font-size;
+    cursor: pointer;
+
+    transition: $transition-color;
+
+    &:last-child {
+        display: flex;
+        align-content: center;
+    }
+
+    & a.active {
+        position: relative;
+    }
+
+    & a.active::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: $social-btn-hover-color;
+
+        @media screen and (min-width: 768px) {
+            bottom: -26px;
+        }
+    }
+
+    &:hover {
+        color: $nav-hover-color;
+    }
+
+}

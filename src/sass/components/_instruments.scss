@@ -1,0 +1,52 @@
+.instrumentsTitle {
+    font-size: $main-title-font-size;
+    color: $main-title-color;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.instrumentsText {
+    color: $main-text-color;
+    font-size: $main-text-font-size;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+}
+
+.instrumentsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.instrumentsItem {
+    color: $main-text-color;
+
+    transition: $transition-color;
+
+    &:hover,
+    &:focus {
+        color: $logo-hover-color;
+    }
+}
+
+.instrumentsIcon {
+    fill: currentColor;
+}

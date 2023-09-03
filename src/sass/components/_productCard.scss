@@ -1,0 +1,58 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: 100%;
+    border-radius: $radi-box;
+    padding: 16px;
+    background-color: $card-color;
+}
+
+.productCardImgWrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px;
+    width: 100%;
+    
+}
+
+.productCardImg {
+    width: 100%;
+}
+// Классы с "-" являются кастомным классом библиотеки Ant d 
+// и используется здесь для изменения стилей по умолчанию
+.productCard .ant-skeleton.ant-skeleton-element {
+    width: 100%;
+    aspect-ratio: 1.7;
+}
+
+.productCard .ant-skeleton.ant-skeleton .ant-skeleton-image {
+    width: 100%;
+    height: 100%;
+}
+
+.productCard .ant-skeleton.ant-skeleton-element .ant-skeleton-image .ant-skeleton-image-svg {
+    width: 100%;
+    aspect-ratio: 1.7;
+}
+
+.productCard .ant-skeleton.ant-skeleton-active .ant-skeleton-image {
+    background: linear-gradient(90deg, #0FAE96, #120E27, #058F7B);
+    background-size: 400% 100%
+}
+
+.productCardFavorite {
+    position: absolute;
+    bottom: 20px;
+    right: 20px
+}
+
+.productCardName {
+    font-size: $secondary-title-font-size;
+    color: $main-text-color;
+}
+
+.productCardDescription {
+    color: $main-text-color;
+}

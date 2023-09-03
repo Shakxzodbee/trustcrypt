@@ -1,0 +1,27 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+    background-color: $card-color;
+    border-radius: $radi-box;
+    padding: 30px;
+    width: 100%;
+}
+
+.articleTitle{
+    font-size: $secondary-title-font-size;
+    color: $main-text-color;
+}
+
+.articleDescription {
+    font-size: $secondary-text-font-size;
+    color: $main-text-color;
+}
+
+.articleLabel {
+    @extend %label;
+    width: fit-content;
+    background-color: $label-color;
+    color: $label-text-color;
+}

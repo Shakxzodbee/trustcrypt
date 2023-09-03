@@ -1,0 +1,121 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+
+    @media screen and (min-width: 768px) {
+        gap: 160px;
+    }
+}
+
+.heroSection {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: space-between;
+
+        &.normal {
+            flex-direction: row;
+        }
+
+        &.reverse {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.heroImgWrap {
+    border-radius: $radi-img;
+    overflow: hidden;
+}
+
+.heroSection .ant-skeleton.ant-skeleton-element {
+    width: 100%;
+    aspect-ratio: 1.75;
+    display: flex;
+    justify-content: center;
+}
+
+.heroSection .ant-skeleton.ant-skeleton .ant-skeleton-image {
+    width: 100%;
+    height: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 600px;
+    }
+}
+
+.heroSection .ant-skeleton.ant-skeleton-element .ant-skeleton-image .ant-skeleton-image-svg {
+    width: 100%;
+    aspect-ratio: 1.75;
+}
+
+.heroSection .ant-skeleton.ant-skeleton-active .ant-skeleton-image {
+    background: linear-gradient(90deg, #0FAE96, #120E27, #058F7B);
+    background-size: 400% 100%
+}
+
+.heroImg {
+    object-fit: contain;
+    object-position: center;
+    border-radius: $radi-img;
+    width: 100%;
+}
+
+.heroDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        align-items: flex-start;
+    }
+}
+
+.heroTitle {
+    text-align: center;
+    margin-bottom: 16px;
+    color: $main-title-color;
+    font-size: $main-title-font-size;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+        margin-bottom: 32px;
+    }
+}
+
+.heroText {
+    display: inline-block;
+    font-size: $main-text-font-size;
+    text-align: center;
+    margin-bottom: 16px;
+    color: $main-text-color;
+
+    @media screen and (min-width: 768px) {
+        text-align: left;
+        margin-bottom: 32px;
+    }
+}
+
+.heroButton {
+    @extend %action-button;
+    background-color: $main-btn-color;
+    color: $main-btn-text-color;
+    font-size: $btn-font-size;
+
+    transition: $transition-background-color;
+    transition: $transition-color;
+
+    &:hover,
+    &:focus {
+        background-color: $main-btn-hover-color;
+        color: $main-btn-color;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 236px;
+    }
+}

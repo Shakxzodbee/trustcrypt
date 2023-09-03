@@ -1,0 +1,20 @@
+.mobileMenuBtn {
+    background-color: transparent;
+    border: none;
+}
+
+// Все стили, написанные через "-", это кастомные стили библиотеки Ant d. 
+// Используются здесь для изменения стилей по умолчанию.
+
+.mobileMenu .mobile-menu.ant-drawer .ant-drawer-content-wrapper {
+    top: 84px;
+}
+
+.mobile-menu.ant-drawer .ant-drawer-body {
+    padding: 104px 20px;
+}
+
+.mobile-menu.ant-drawer .ant-drawer-body,
+.mobile-menu.ant-drawer .ant-menu-light {
+    background-color: $mobile-menu-bg-color;
+}

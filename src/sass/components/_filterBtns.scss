@@ -1,0 +1,31 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.filterBtn {
+    @extend %action-button;
+    margin-bottom: 32px;
+    color: $main-btn-text-color;
+    background-color: $secondary-btn-color;
+    border: none;
+
+    transition: $transition-background-color;
+    transition: $transition-color;
+
+    &:hover,
+    &:focus {
+        background-color: $secondary-btn-hover-color;
+    }
+
+    &.active {
+        background-color: $secondary-btn-active-color;
+        color: $secondary-btn-active-text-color;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 60px;
+    }
+}
+

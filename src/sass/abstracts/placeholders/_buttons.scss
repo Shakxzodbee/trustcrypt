@@ -1,0 +1,14 @@
+%action-button {
+    width: 170px;
+    height: 48px;
+    border-radius: $radi-btn;
+    font-size: $btn-font-size;
+    border: none;
+}
+
+%social-btn {
+    border-radius: $radi-round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
